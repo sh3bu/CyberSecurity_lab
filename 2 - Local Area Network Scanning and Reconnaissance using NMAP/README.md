@@ -55,7 +55,21 @@ e) Use the NMAP command to scan multiple hosts. [HINT: Add hosts into a file and
 
 f) Use NMAP commands to export the output in XML format.
 
+For this we use the `-oX` flag.
+
+EX - `nmap -sCV` <target-ip> -oX result.xml`
+ 
+![image](https://user-images.githubusercontent.com/67383098/226130386-8fa39901-e04f-480c-b0a5-241326d28479.png)
+
+
 g) Use the NMAP command to get OS information about a host.
+ 
+![image](https://user-images.githubusercontent.com/67383098/226131195-01f60580-3b85-44fb-8cfd-3ab3773619b5.png)
+
+
+To find the OS information about the host, we use the `-O` flag .
+
+EX - `nmap -O <target-ip>`
 
 h) Explain ping sweeping and Perform ping sweeping using Nmap
 
@@ -80,5 +94,23 @@ where,
 fingerprint detection using NMAP.
 
 2. What is EXIF data? Try to find EXIF data of images on a website using NMAP NSE
+
+#### EXIF DATA 
+
+It  is a metadata that is embedded within image files, such as JPEGs, TIFFs, and RAW files. This data includes information about the camera settings used to take the picture, as well as information about the date, time, and location of the image
+ Exif data can also include information about the camera's make and model, the lens used, and the exposure settings, such as shutter speed, aperture, and ISO.
+
 3. Use NMAP NSE to find all subdomains of the website.
+
+All the nse scripts are loacated in `/usr/share/nmap/scripts/`
+
+> The `dns-brute` script built into Nmap is designed to enumerate subdomains and their corresponding server IP addresses.
+
+![image](https://user-images.githubusercontent.com/67383098/226129157-fa9e31ae-c8b9-4dfa-ae95-e6ff37ce5490.png)
+
+
 4. Perform a vulnerability scan on the target host using NMAP NSE.
+
+> `nmap -sV --script=vuln <target ip>`
+
+
