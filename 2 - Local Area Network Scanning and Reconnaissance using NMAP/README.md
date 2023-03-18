@@ -59,6 +59,20 @@ g) Use the NMAP command to get OS information about a host.
 
 h) Explain ping sweeping and Perform ping sweeping using Nmap
 
+#### Ping Sweep
+
+Ping sweeping is a network reconnaissance technique used to determine which IP addresses are alive and responsive on a network. It involves sending a series of ICMP echo request messages, also known as pings, to a range of IP addresses, usually in a sequential order, to identify which ones are available and can be reached.
+
+Ping sweeping is often used by network administrators to identify active hosts on a network and to map the network
+
+Nmap command to perform ping sweep - `nmap -sn <network address>/<CIDR>`.
+
+where,
+
+`-sn` -  allows to perform a ping scan only on the target:
+
+
+
 > Also, learn other scans of NMAP using the man page or –help option.
 ## Try these below questions after completing the above commands.
 
