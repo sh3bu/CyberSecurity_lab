@@ -41,19 +41,19 @@ Command - `nmap -sS -p- <ip>`
  `-p-` -  all ports
  
 
-c) Use the NMAP command to scan a network and determine which devices are up and running.
+## c) Use the NMAP command to scan a network and determine which devices are up and running.
 
 
 
-d) What are vertical and horizontal scanning?
+## d) What are vertical and horizontal scanning?
 
 - `Vertical scanning`, also known as **service scanning**, involves **scanning a single host for all the open ports and services** that are running on it. This approach allows for a detailed analysis of the individual host, including the versions of services running, operating system, and other relevant information.
 
 - `Horizontal scanning`, also known as **port scanning**, involves **scanning multiple hosts for a specific open port or set of ports**. This approach allows for a quick overview of the network or hosts that may have a specific service or vulnerability present.
 
-e) Use the NMAP command to scan multiple hosts. [HINT: Add hosts into a file and scan it].
+## e) Use the NMAP command to scan multiple hosts. [HINT: Add hosts into a file and scan it].
 
-f) Use NMAP commands to export the output in XML format.
+## f) Use NMAP commands to export the output in XML format.
 
 For this we use the `-oX` flag.
 
@@ -62,7 +62,7 @@ EX - `nmap -sCV` <target-ip> -oX result.xml`
 ![image](https://user-images.githubusercontent.com/67383098/226130386-8fa39901-e04f-480c-b0a5-241326d28479.png)
 
 
-g) Use the NMAP command to get OS information about a host.
+## g) Use the NMAP command to get OS information about a host.
  
 ![image](https://user-images.githubusercontent.com/67383098/226131195-01f60580-3b85-44fb-8cfd-3ab3773619b5.png)
 
@@ -71,7 +71,7 @@ To find the OS information about the host, we use the `-O` flag .
 
 EX - `nmap -O <target-ip>`
 
-h) Explain ping sweeping and Perform ping sweeping using Nmap
+## h) Explain ping sweeping and Perform ping sweeping using Nmap
 
 #### Ping Sweep
 
@@ -90,17 +90,17 @@ where,
 > Also, learn other scans of NMAP using the man page or –help option.
 ## Try these below questions after completing the above commands.
 
-1. What is a web application firewall? How do you use Nmap to detect a WAF? Perform WAF
+## 1. What is a web application firewall? How do you use Nmap to detect a WAF? Perform WAF
 fingerprint detection using NMAP.
 
-2. What is EXIF data? Try to find EXIF data of images on a website using NMAP NSE
+## 2. What is EXIF data? Try to find EXIF data of images on a website using NMAP NSE
 
 #### EXIF DATA 
 
 It  is a metadata that is embedded within image files, such as JPEGs, TIFFs, and RAW files. This data includes information about the camera settings used to take the picture, as well as information about the date, time, and location of the image
  Exif data can also include information about the camera's make and model, the lens used, and the exposure settings, such as shutter speed, aperture, and ISO.
 
-3. Use NMAP NSE to find all subdomains of the website.
+## 3. Use NMAP NSE to find all subdomains of the website.
 
 All the nse scripts are loacated in `/usr/share/nmap/scripts/`
 
@@ -109,7 +109,7 @@ All the nse scripts are loacated in `/usr/share/nmap/scripts/`
 ![image](https://user-images.githubusercontent.com/67383098/226129157-fa9e31ae-c8b9-4dfa-ae95-e6ff37ce5490.png)
 
 
-4. Perform a vulnerability scan on the target host using NMAP NSE.
+## 4. Perform a vulnerability scan on the target host using NMAP NSE.
 
 > `nmap -sV --script=vuln <target ip>`
 
