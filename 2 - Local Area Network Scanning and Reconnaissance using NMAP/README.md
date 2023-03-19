@@ -122,9 +122,12 @@ where,
 
 #### EXIF DATA 
 
-It  is a metadata that is embedded within image files, such as JPEGs, TIFFs, and RAW files. This data includes information about the camera settings used to take the picture, as well as information about the date, time, and location of the image
- Exif data can also include information about the camera's make and model, the lens used, and the exposure settings, such as shutter speed, aperture, and ISO.
+- It  is a metadata that is embedded within image files, such as JPEGs, TIFFs, and RAW files. This data includes information about the camera settings used to take the picture, as well as information about the date, time, and location of the image
+- Exif data can also include information about the camera's make and model, the lens used, and the exposure settings, such as shutter speed, aperture, and ISO.
 
+ ![image](https://user-images.githubusercontent.com/67383098/226196247-166ac25b-8283-4037-8a8c-14bfc8813f6a.png)
+
+ 
 ## 3. Use NMAP NSE to find all subdomains of the website.
 
 All the nse scripts are loacated in `/usr/share/nmap/scripts/`
