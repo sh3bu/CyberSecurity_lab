@@ -98,16 +98,26 @@ Nmap command to perform ping sweep - `nmap -sn <network address>/<CIDR>`.
 
 where,
 
-`-sn` -  allows to perform a ping scan only on the target:
+`-sn` -  allows to perform a ping scan on the target:
+
+![image](https://user-images.githubusercontent.com/67383098/226191763-07d7092c-12ef-495c-b49c-8d065e2c8ed8.png)
 
 
-
-> Also, learn other scans of NMAP using the man page or –help option.
 ## Try these below questions after completing the above commands.
 
-## 1. What is a web application firewall? How do you use Nmap to detect a WAF? Perform WAF
-fingerprint detection using NMAP.
+## 1. What is a web application firewall? How do you use Nmap to detect a WAF? Perform WAF fingerprint detection using NMAP.
 
+- A **web application firewall (WAF)** is a firewall that monitors, filters and blocks data packets as they travel to and from a website or web application. 
+
+ - A WAF can be either network-based, host-based or cloud-based and is often deployed through a reverse proxy and placed in front of one or more websites or applications. 
+ 
+- Running as a network appliance, server plugin or cloud service, the WAF inspects each packet and uses a rule base to analyze Layer 7 web application logic and filter out potentially harmful traffic that can facilitate web exploits.
+ 
+ Command - `nmap --script http-waf-detect`
+ 
+ ![image](https://user-images.githubusercontent.com/67383098/226195021-db8e14c3-f334-4633-ab66-c15e572200cd.png)
+
+ 
 ## 2. What is EXIF data? Try to find EXIF data of images on a website using NMAP NSE
 
 #### EXIF DATA 
@@ -126,6 +136,10 @@ All the nse scripts are loacated in `/usr/share/nmap/scripts/`
 
 ## 4. Perform a vulnerability scan on the target host using NMAP NSE.
 
-> `nmap -sV --script=vuln <target ip>`
+Command -  `nmap -sV --script=vuln <target ip>`
+
+![image](https://user-images.githubusercontent.com/67383098/226194429-7be73c14-e520-4dbf-ad20-13e96aa1c6dd.png)
+ 
+![image](https://user-images.githubusercontent.com/67383098/226194499-d4316864-5339-4cdc-8e95-f9e541422f16.png)
 
 
