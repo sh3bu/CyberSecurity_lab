@@ -8,6 +8,9 @@ Command to scan entire subnet - `nmap -sn <network address>/<subnet prefix/CIDR 
 
 Example - `nmap 192.168.1.0/24`
 
+![image](https://user-images.githubusercontent.com/67383098/226188623-ec2bed0f-0a5a-4337-9dc8-0f8c349c9363.png)
+
+
 ## b) What is a firewall and mention its types. Use the NMAP command to detect that a firewall protects the host.
 
 #### Firewall 
@@ -40,9 +43,13 @@ Command - `nmap -sS -p- <ip>`
  
  `-p-` -  all ports
  
+![image](https://user-images.githubusercontent.com/67383098/226191049-d321a20b-4e16-404f-9c22-721bbbd2d1cf.png)
 
 ## c) Use the NMAP command to scan a network and determine which devices are up and running.
 
+Command - `nmap -sn <ip>/<CIDR> `
+
+![image](https://user-images.githubusercontent.com/67383098/226189218-0674b7bb-1822-440b-a54c-e2bc3180a5d7.png)
 
 
 ## d) What are vertical and horizontal scanning?
@@ -52,6 +59,13 @@ Command - `nmap -sS -p- <ip>`
 - `Horizontal scanning`, also known as **port scanning**, involves **scanning multiple hosts for a specific open port or set of ports**. This approach allows for a quick overview of the network or hosts that may have a specific service or vulnerability present.
 
 ## e) Use the NMAP command to scan multiple hosts. [HINT: Add hosts into a file and scan it].
+
+Adding the ip address to `/etc/hosts` file.
+
+![image](https://user-images.githubusercontent.com/67383098/226190526-521b91db-c0da-4e70-bd8d-f1f85fa4a14a.png)
+
+![image](https://user-images.githubusercontent.com/67383098/226190608-4ddacc0b-c8b6-4104-a26a-d1f90818f9b3.png)
+
 
 ## f) Use NMAP commands to export the output in XML format.
 
@@ -64,12 +78,13 @@ EX - `nmap -sCV` <target-ip> -oX result.xml`
 
 ## g) Use the NMAP command to get OS information about a host.
  
-![image](https://user-images.githubusercontent.com/67383098/226131195-01f60580-3b85-44fb-8cfd-3ab3773619b5.png)
-
 
 To find the OS information about the host, we use the `-O` flag .
 
 EX - `nmap -O <target-ip>`
+
+![image](https://user-images.githubusercontent.com/67383098/226191577-8674c6f3-e5f8-433d-bd5e-4fb13df68331.png)
+
 
 ## h) Explain ping sweeping and Perform ping sweeping using Nmap
 
