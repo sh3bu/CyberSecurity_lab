@@ -87,7 +87,11 @@ Our target is now effectively off the network.
 
 ## 3. Perform DNS Spoofing attack using ARP Cache Poisoning attacks
 
-Open ettercao
+Open ettercap. Go to `Plugins` -> `Hosts` -> `Scan for hosts` to scan all the hsots int he network.
+
+Now click on `host list` to show the list of hosts identified.
+
+
 
 We setup a fake login page,
 
@@ -103,8 +107,13 @@ Go to `Plugins` -> `Manage plugins` -> select `dns_spoof`
 
 ![image](https://user-images.githubusercontent.com/67383098/227728270-fd182644-d418-4e93-806f-219cd9ca2366.png)
 
+Add the victim ip as target1 & gateway address as target2.
 
+Open the `etter.dns` file which is located at `/etc/ettercap/etter.dns`.
 
+Uncomment the following lin & change the ip of yahoo.com to victim ip (10.0.2.5)
+
+![image](https://user-images.githubusercontent.com/67383098/227729806-2c372a4b-f036-48ef-9c7c-23acb77bf5d9.png)
 
 
 
