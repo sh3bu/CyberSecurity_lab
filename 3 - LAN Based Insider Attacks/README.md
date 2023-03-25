@@ -109,11 +109,35 @@ Go to `Plugins` -> `Manage plugins` -> select `dns_spoof`
 
 Add the victim ip as target1 & gateway address as target2.
 
+Open the ettercap config file which is located at `/etc/ettercap/etter.conf`
+
+Change the following values to 0
+
+![image](https://user-images.githubusercontent.com/67383098/227730162-ed9b4e48-e3ae-4e3a-89e8-efb694dc4f38.png)
+
+
 Open the `etter.dns` file which is located at `/etc/ettercap/etter.dns`.
+
+>` etter.dns` file is the hosts file and is responsible for redirecting specific DNS requests. Basically, if the target enters facebook.com they will be redirected to 
+> Facebook's website, but this file can change
 
 Uncomment the following lin & change the ip of yahoo.com to victim ip (10.0.2.5)
 
 ![image](https://user-images.githubusercontent.com/67383098/227729806-2c372a4b-f036-48ef-9c7c-23acb77bf5d9.png)
+
+In a real life scenario, an attacker would use this attack to redirect traffic to their own machine for data sniffing. This is done by starting an Apache server on the Kali machine and changing the default homepage to a clone of, let's say facebook.com  so that when the victim visits those websites, after being redirected to the attacker machine they will see the clones of the aforementioned sites. This will probably fool the unsuspecting user into entering their credentials where they really shouldn't.
+
+Start the arp poisoning attack by clicking `MITM` -> `ARP poisoning`
+
+![image](https://user-images.githubusercontent.com/67383098/227729986-57dc6a3f-f531-4cc0-85a1-18948dad1712.png)
+
+Activate the `dns_spoof` plugin by going to `plugins` -> `manage plugins` 
+
+
+
+
+
+
 
 
 
