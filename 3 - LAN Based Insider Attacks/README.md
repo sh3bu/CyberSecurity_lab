@@ -6,6 +6,15 @@ environment:
 
 1. Perform Password stealing (over plaintext) using ARP Cache Poisoning attacks
 
+For this attack we take 2 systems, 
+
+- Kali (attacker) - 10.0.2.4
+- Fedora (victim) - 10.0.2.5
+
+First open `Etterca` in kali linux
+
+
+
 
 2. Perform Denial of Service (DoS) attacks using ARP Cache Poisoning attacks
 
