@@ -111,7 +111,7 @@ Open the `etter.dns` file which is located at `/etc/ettercap/etter.dns`.
 
 Type the following line  `google.com A 10.0.2.4 ` where 10.0.2.4 is the attacker ip
 
-![image](https://user-images.githubusercontent.com/67383098/227729806-2c372a4b-f036-48ef-9c7c-23acb77bf5d9.png)
+![image](https://user-images.githubusercontent.com/67383098/227732838-8729c151-af9d-4692-a8ea-03ab2db9fc63.png)
 
 In a real life scenario, an attacker would use this attack to redirect traffic to their own machine for data sniffing. This is done by starting an Apache server on the Kali machine and changing the default homepage to a clone of, let's say facebook.com  so that when the victim visits those websites, after being redirected to the attacker machine they will see the clones of the aforementioned sites. This will probably fool the unsuspecting user into entering their credentials where they really shouldn't.
 
