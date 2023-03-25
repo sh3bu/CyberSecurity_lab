@@ -87,6 +87,26 @@ Our target is now effectively off the network.
 
 ## 3. Perform DNS Spoofing attack using ARP Cache Poisoning attacks
 
+Open ettercao
+
+We setup a fake login page,
+
+![image](https://user-images.githubusercontent.com/67383098/227728008-785f27a3-e5f3-438f-830d-ec8e761bea37.png)
+
+Go to ettercap -> `MITM` -> `ARP poisoning` -> choose `sniff remote connections` -> click `ok`
+
+![image](https://user-images.githubusercontent.com/67383098/227728129-c06a3d1e-ef8e-4e8d-bb12-eaa9eb31b44b.png)
+
+
+Go to `Plugins` -> `Manage plugins` -> select `dns_spoof`
+
+
+![image](https://user-images.githubusercontent.com/67383098/227728270-fd182644-d418-4e93-806f-219cd9ca2366.png)
+
+
+
+
+
 
 ## 4. Invoke ‘sslstrip tool’ for stealing passwords from any machine that is connected to a LAN by
 stripping the HTTPS connection.
