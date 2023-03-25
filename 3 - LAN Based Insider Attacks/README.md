@@ -140,6 +140,8 @@ So when victim types `mypage.io` he will be redirected to attacker's fake login 
 
 ## 4. Invoke ‘sslstrip tool’ for stealing passwords from any machine that is connected to a LAN by stripping the HTTPS connection.
 
+Sslstrip is a tool that can be used to perform a man-in-the-middle (MITM) attack on a network by intercepting HTTP traffic and downgrading HTTPS connections to plain HTTP. This means that the tool can be used to intercept sensitive information, including passwords, that would normally be encrypted and protected when transmitted over HTTPS.
+
 ## 5. Use arp_cop and scan_poisoner plugins to learn about the detection of ARP attacks.
 
 
