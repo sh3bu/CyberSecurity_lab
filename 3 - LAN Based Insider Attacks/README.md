@@ -115,13 +115,6 @@ Type the following line  `google.com A 10.0.2.4 ` where 10.0.2.4 is the attacker
 
 In a real life scenario, an attacker would use this attack to redirect traffic to their own machine for data sniffing. This is done by starting an Apache server on the Kali machine and changing the default homepage to a clone of, let's say facebook.com  so that when the victim visits those websites, after being redirected to the attacker machine they will see the clones of the aforementioned sites. This will probably fool the unsuspecting user into entering their credentials where they really shouldn't.
 
-Start the arp poisoning attack by clicking `MITM` -> `ARP poisoning`
-
-![image](https://user-images.githubusercontent.com/67383098/227729986-57dc6a3f-f531-4cc0-85a1-18948dad1712.png)
-
-Activate the `dns_spoof` plugin by going to `plugins` -> `manage plugins` 
-
-![image](https://user-images.githubusercontent.com/67383098/227730302-1ed994d3-0ef7-4acf-8b12-40974b0892a6.png)
 
 We setup a fake login page . Start the **apache2** server using the command `sudo systemctl start apache2`
 
@@ -131,6 +124,15 @@ Go to ettercap -> `MITM` -> `ARP poisoning` -> choose `sniff remote connections`
 
 ![image](https://user-images.githubusercontent.com/67383098/227728129-c06a3d1e-ef8e-4e8d-bb12-eaa9eb31b44b.png)
 
+Activate the `dns_spoof` plugin by going to `plugins` -> `manage plugins` 
+
+![image](https://user-images.githubusercontent.com/67383098/227732624-2399d27a-a0fa-4d73-bfb1-f60892df61d1.png)
+
+The page ***mypage.io** is now mapped to 10.0.2.4 which is attacker 's IP address. 
+
+So when victim types `mypage.io` he will be redirected to attacker' sfake login page
+
+![image](https://user-images.githubusercontent.com/67383098/227730302-1ed994d3-0ef7-4acf-8b12-40974b0892a6.png)
 
 
 
