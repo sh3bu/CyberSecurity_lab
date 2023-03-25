@@ -130,7 +130,7 @@ Activate the `dns_spoof` plugin by going to `plugins` -> `manage plugins`
 
 The page ***mypage.io** is now mapped to 10.0.2.4 which is attacker 's IP address. 
 
-So when victim types `mypage.io` he will be redirected to attacker' sfake login page
+So when victim types `mypage.io` he will be redirected to attacker's fake login page
 
 ![image](https://user-images.githubusercontent.com/67383098/227730302-1ed994d3-0ef7-4acf-8b12-40974b0892a6.png)
 
@@ -138,8 +138,7 @@ So when victim types `mypage.io` he will be redirected to attacker' sfake login 
 
 
 
-## 4. Invoke ‘sslstrip tool’ for stealing passwords from any machine that is connected to a LAN by
-stripping the HTTPS connection.
+## 4. Invoke ‘sslstrip tool’ for stealing passwords from any machine that is connected to a LAN by stripping the HTTPS connection.
 
 ## 5. Use arp_cop and scan_poisoner plugins to learn about the detection of ARP attacks.
 
