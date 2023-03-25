@@ -4,7 +4,7 @@
 Make use of Ettercap/arpspoof tool to perform ARP Cache Poisoning based attacks in a LAN
 environment:
 
-1. Perform Password stealing (over plaintext) using ARP Cache Poisoning attacks
+## 1. Perform Password stealing (over plaintext) using ARP Cache Poisoning attacks
 
 For this attack we take 2 systems, 
 
@@ -41,7 +41,7 @@ After we try to login with the credentials, we can see the packet being sniffed 
 
 
 
-2. Perform Denial of Service (DoS) attacks using ARP Cache Poisoning attacks
+## 2. Perform Denial of Service (DoS) attacks using ARP Cache Poisoning attacks
 
 Ettercap has many built-in tools to allow all sorts of network activity from sniffing to ARP spoofing. It also has the ability to use filters to focus its activity. For example, we want to block a host from the network, the simplest way to do that is to not allow any packets to be sent to or from the host we wish to block. Ettercap filters allow us to do just that.
 
@@ -85,13 +85,13 @@ Our target is now effectively off the network.
 
 
 
-3. Perform DNS Spoofing attack using ARP Cache Poisoning attacks
+## 3. Perform DNS Spoofing attack using ARP Cache Poisoning attacks
 
 
-4. Invoke ‘sslstrip tool’ for stealing passwords from any machine that is connected to a LAN by
+## 4. Invoke ‘sslstrip tool’ for stealing passwords from any machine that is connected to a LAN by
 stripping the HTTPS connection.
 
-5. Use arp_cop and scan_poisoner plugins to learn about the detection of ARP attacks.
+## 5. Use arp_cop and scan_poisoner plugins to learn about the detection of ARP attacks.
 
 
 Observe the ARP cache table, CAM table, etc., before and after the attack for all the above attacks. Run
