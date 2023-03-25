@@ -91,22 +91,6 @@ Open ettercap. Go to `Plugins` -> `Hosts` -> `Scan for hosts` to scan all the hs
 
 Now click on `host list` to show the list of hosts identified.
 
-
-
-We setup a fake login page,
-
-![image](https://user-images.githubusercontent.com/67383098/227728008-785f27a3-e5f3-438f-830d-ec8e761bea37.png)
-
-Go to ettercap -> `MITM` -> `ARP poisoning` -> choose `sniff remote connections` -> click `ok`
-
-![image](https://user-images.githubusercontent.com/67383098/227728129-c06a3d1e-ef8e-4e8d-bb12-eaa9eb31b44b.png)
-
-
-Go to `Plugins` -> `Manage plugins` -> select `dns_spoof`
-
-
-![image](https://user-images.githubusercontent.com/67383098/227728270-fd182644-d418-4e93-806f-219cd9ca2366.png)
-
 Add the victim ip as target1 & gateway address as target2.
 
 Open the ettercap config file which is located at `/etc/ettercap/etter.conf`
@@ -115,13 +99,17 @@ Change the following values to 0
 
 ![image](https://user-images.githubusercontent.com/67383098/227730162-ed9b4e48-e3ae-4e3a-89e8-efb694dc4f38.png)
 
+Uncopmment the following lines
+
+![image](https://user-images.githubusercontent.com/67383098/227730257-d4e9ca6e-cf51-4113-9423-d7ba513091b5.png)
+
 
 Open the `etter.dns` file which is located at `/etc/ettercap/etter.dns`.
 
 >` etter.dns` file is the hosts file and is responsible for redirecting specific DNS requests. Basically, if the target enters facebook.com they will be redirected to 
 > Facebook's website, but this file can change
 
-Uncomment the following lin & change the ip of yahoo.com to victim ip (10.0.2.5)
+Type the following line  `google.com A 10.0.2.4 ` where 10.0.2.4 is the attacker ip
 
 ![image](https://user-images.githubusercontent.com/67383098/227729806-2c372a4b-f036-48ef-9c7c-23acb77bf5d9.png)
 
@@ -133,8 +121,15 @@ Start the arp poisoning attack by clicking `MITM` -> `ARP poisoning`
 
 Activate the `dns_spoof` plugin by going to `plugins` -> `manage plugins` 
 
+![image](https://user-images.githubusercontent.com/67383098/227730302-1ed994d3-0ef7-4acf-8b12-40974b0892a6.png)
 
+We setup a fake login page . Start the **apache2** server using the command `sudo systemctl start apache2`
 
+![image](https://user-images.githubusercontent.com/67383098/227728008-785f27a3-e5f3-438f-830d-ec8e761bea37.png)
+
+Go to ettercap -> `MITM` -> `ARP poisoning` -> choose `sniff remote connections` -> click `ok`
+
+![image](https://user-images.githubusercontent.com/67383098/227728129-c06a3d1e-ef8e-4e8d-bb12-eaa9eb31b44b.png)
 
 
 
