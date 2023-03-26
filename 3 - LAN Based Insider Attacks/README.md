@@ -146,9 +146,48 @@ So when victim types `mypage.io` he will be redirected to attacker's fake login 
 
 ## 4. Invoke ‘sslstrip tool’ for stealing passwords from any machine that is connected to a LAN by stripping the HTTPS connection.
 
-Sslstrip is a tool that can be used to perform a man-in-the-middle (MITM) attack on a network by intercepting HTTP traffic and downgrading HTTPS connections to plain HTTP. This means that the tool can be used to intercept sensitive information, including passwords, that would normally be encrypted and protected when transmitted over HTTPS.
+
+> The purpose of SSLstrip is to perform a man-in-the-middle (MitM) attack to intercept and modify HTTP traffic that should be protected by SSL/TLS encryption.
+
+> When a user visits a website that uses SSL/TLS encryption, their browser should establish a secure HTTPS connection to the server. However, SSLstrip can intercept
+> the user's initial HTTP request and modify it so that it appears to be a non-secure HTTP request instead. The plugin can then forward this request to the server and
+> intercept any response that the server sends back.
 
 ## 5. Use arp_cop and scan_poisoner plugins to learn about the detection of ARP attacks.
+
+> The arp_cop plugin is used to detect and prevent ARP spoofing attacks on a local network. It does this by monitoring ARP traffic on the network and comparing the MAC
+> addresses associated with each IP address. If it detects a mismatch, indicating an ARP spoofing attack.
+
+> The scan_poisoner plugin is used to automate ARP spoofing attacks on a network. It works by scanning the network for devices and their associated IP and MAC 
+> addresses, and then sending ARP packets to associate the attacker's MAC address with each device's IP address. This allows the attacker to intercept and modify
+> network traffic between each device and the rest of the network.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Observe the ARP cache table, CAM table, etc., before and after the attack for all the above attacks. Run
