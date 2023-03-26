@@ -17,7 +17,10 @@ First open `Ettercap` in kali linux
 
 ![image](https://user-images.githubusercontent.com/67383098/227707494-dee50bd4-2060-4b37-bc30-cacd7f567ba4.png)
 
+Click on `hosts` -> `Scan for hosts`
+
 ![image](https://user-images.githubusercontent.com/67383098/227707588-259bf7ee-4b21-496f-acd7-bf9524a4b214.png)
+
 
 ![image](https://user-images.githubusercontent.com/67383098/227707616-48f7c6ec-6878-4e60-9140-05e3200411e5.png)
 
@@ -41,13 +44,27 @@ After we try to login with the credentials, we can see the packet being sniffed 
 
 
 
-## 2. Perform Denial of Service (DoS) attacks using ARP Cache Poisoning attacks
+## 2. Perform Denial of Service (DoS) attacks using ARP Cache Poisoning attacks.
+
+As like the previous steps, 
+
+1. Scan for hosts
+2. Add hosts as target (only the target ip & not the gateway ip)
+3. Start arp poisoning the victim.
+
+Now run the `dos_attack` plugin
 
 ![image](https://user-images.githubusercontent.com/67383098/227785280-253d3dad-7a57-4d1a-8713-fe4ddcfc53d6.png)
 
+Enter the target ip.
+
 ![image](https://user-images.githubusercontent.com/67383098/227785325-9843ea75-cc93-4054-9a1b-d91a5c09750f.png)
 
+Enter any unused ip in the subnetwork( ip which is not shownm in hosts list )
+
 ![image](https://user-images.githubusercontent.com/67383098/227786174-a01be130-3eaa-4f82-8c9e-7c9421d4f172.png)
+
+Once we activate the plugin , the target ip sends hundreads of packets to victim, causing the victim to become slow. So any web search made by victim just keeps on loading.
 
 ![image](https://user-images.githubusercontent.com/67383098/227787244-41cda2ff-d2ee-475a-a283-8eda5bee6dc8.png)
 
