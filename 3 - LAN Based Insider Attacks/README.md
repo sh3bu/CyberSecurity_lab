@@ -6,6 +6,14 @@ environment:
 
 ## 1. Perform Password stealing (over plaintext) using ARP Cache Poisoning attacks
 
+**Context -**
+
+> ARP (Address Resolution Protocol) cache poisoning is a technique used by attackers to intercept network traffic between two hosts on a local network. In the context
+> of ettercap, a popular network sniffing and MITM (Man-in-the-Middle) tool, the ARP cache poisoning plugin is used to perform this attack.
+> When the ARP cache poisoning plugin is enabled in ettercap, it sends fake ARP messages to the hosts on the local network, which causes them to update their ARP cache
+> with a fake MAC address for a particular IP address. This allows the attacker to intercept network traffic between two hosts on the local network by redirecting the
+> traffic to their own machine.
+
 For this attack we take 2 systems, 
 
 - Kali (attacker) - 10.0.2.4
@@ -46,6 +54,13 @@ After we try to login with the credentials, we can see the packet being sniffed 
 
 ## 2. Perform Denial of Service (DoS) attacks using ARP Cache Poisoning attacks.
 
+**Context -**
+
+>  The DoS (Denial of Service) attack plugin in ettercap is used to flood a target system or network with an overwhelming amount of traffic to disrupt the normal
+>  functioning of the system or network. The purpose of this attack is to make the target system or network unavailable to legitimate users.
+>  The DoS attack plugin in ettercap works by generating a large amount of network traffic towards the target.
+>  The legitimate traffic may include HTTP requests, DNS queries, or other network requests.
+
 As like the previous steps, 
 
 1. Scan for hosts
@@ -69,6 +84,14 @@ Once we activate the plugin , the target ip sends hundreads of packets to victim
 ![image](https://user-images.githubusercontent.com/67383098/227787244-41cda2ff-d2ee-475a-a283-8eda5bee6dc8.png)
 
 ## 3. Perform DNS Spoofing attack using ARP Cache Poisoning attacks
+
+**Context -**
+
+> When the DNS spoofing plugin is enabled in ettercap, it intercepts DNS queries from the victim and responds with a fake DNS response that contains a fake IP address. > This fake IP address is the IP address of the attacker's machine or any other IP address that the attacker wants the victim to visit.
+> The ettercap DNS spoofing plugin listens for DNS requests made by the victim. Once a request is captured, the plugin sends a fake DNS response to the victim's
+> machine, which contains the IP address of the attacker's machine or any other IP address specified by the attacker.
+
+This manipulation of the DNS response allows the attacker to redirect the victim's traffic to any website or web page of their choice. Once the victim's traffic is redirected to the attacker's website, the attacker can then perform various malicious activities, such as stealing login credentials, injecting malware, or intercepting sensitive data.
 
 Open ettercap. Go to `Plugins` -> `Hosts` -> `Scan for hosts` to scan all the hsots int he network.
 
