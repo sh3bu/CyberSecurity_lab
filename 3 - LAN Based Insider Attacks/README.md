@@ -153,32 +153,41 @@ So when victim types `mypage.io` he will be redirected to attacker's fake login 
 > the user's initial HTTP request and modify it so that it appears to be a non-secure HTTP request instead. The plugin can then forward this request to the server and
 > intercept any response that the server sends back.
 
+We need to change the value of this file `/proc/sys/net/ipv4/ip_forward`  from **0** to **1**
+ 
 ![image](https://user-images.githubusercontent.com/67383098/227924967-0decfc94-a0d5-439e-85ea-1797718ecc08.png)
+
+Scan the hosts for systems that are alive in the network. Add te gateway address as target1 & victim ip as target2.
 
 ![image](https://user-images.githubusercontent.com/67383098/227925428-3f77757a-1005-45c3-b1e1-e411977006c8.png)
 
+Activate `sslstrip` plugin 
 
 ![image](https://user-images.githubusercontent.com/67383098/227925578-a67e776a-e7a6-41bd-8496-9c78ee126599.png)
 
+Go to `MITM` -> select `SSL Intercept`.
 
 ![image](https://user-images.githubusercontent.com/67383098/227925720-e5a7664a-8b8b-48f6-b12c-f270cc95f2c9.png)
 
+Now sslstip plugin has been enabled.
+
 ![image](https://user-images.githubusercontent.com/67383098/227926008-cdfe03af-8834-41c4-8b87-e5811de9a53d.png)
+
+Start arp_poisoning attack.
+
 
 ![image](https://user-images.githubusercontent.com/67383098/227926453-318d41ef-cf79-4b06-b6d8-09f5bf03180c.png)
 
 
+Now in the victim, if we open a website we  will get **Secure connection failed** ie  ssl has been stripped. The page does not load because of ssl certificate mismatch error.
+
 ![image](https://user-images.githubusercontent.com/67383098/227926632-b7a9e41a-743e-470b-808f-094e159562ae.png)
 
+I we disable the ssltrip plugin, then the page can load with https in victim machine.
 
 ![image](https://user-images.githubusercontent.com/67383098/227928211-a22eb879-3eaa-4a5d-b7b6-ab27b67c7a7b.png)
 
 ![image](https://user-images.githubusercontent.com/67383098/227928268-9ff4a119-40c0-4dcb-a052-843a3def0380.png)
-
-
-
-
-
 
 
 
