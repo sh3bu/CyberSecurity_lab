@@ -202,6 +202,16 @@ I we disable the ssltrip plugin, then the page can load with https in victim mac
 > addresses, and then sending ARP packets to associate the attacker's MAC address with each device's IP address. This allows the attacker to intercept and modify
 > network traffic between each device and the rest of the network.
 
+![image](https://user-images.githubusercontent.com/67383098/227937619-4588bec8-54b1-4b57-8a6b-439a59141420.png)
+
+
+
+![image](https://user-images.githubusercontent.com/67383098/227937228-e8a35f79-8c17-4ab9-872f-8e79551f72d9.png)
+
+![image](https://user-images.githubusercontent.com/67383098/227938566-5eb335d5-2127-4ffd-8f62-b64c62af5b2d.png)
+
+
+![image](https://user-images.githubusercontent.com/67383098/227938135-8cd9320d-cfd9-494f-9058-97fab558498d.png)
 
 
 
