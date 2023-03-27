@@ -153,6 +153,34 @@ So when victim types `mypage.io` he will be redirected to attacker's fake login 
 > the user's initial HTTP request and modify it so that it appears to be a non-secure HTTP request instead. The plugin can then forward this request to the server and
 > intercept any response that the server sends back.
 
+![image](https://user-images.githubusercontent.com/67383098/227924967-0decfc94-a0d5-439e-85ea-1797718ecc08.png)
+
+![image](https://user-images.githubusercontent.com/67383098/227925428-3f77757a-1005-45c3-b1e1-e411977006c8.png)
+
+
+![image](https://user-images.githubusercontent.com/67383098/227925578-a67e776a-e7a6-41bd-8496-9c78ee126599.png)
+
+
+![image](https://user-images.githubusercontent.com/67383098/227925720-e5a7664a-8b8b-48f6-b12c-f270cc95f2c9.png)
+
+![image](https://user-images.githubusercontent.com/67383098/227926008-cdfe03af-8834-41c4-8b87-e5811de9a53d.png)
+
+![image](https://user-images.githubusercontent.com/67383098/227926453-318d41ef-cf79-4b06-b6d8-09f5bf03180c.png)
+
+
+![image](https://user-images.githubusercontent.com/67383098/227926632-b7a9e41a-743e-470b-808f-094e159562ae.png)
+
+
+
+
+
+
+
+
+
+
+
+
 ## 5. Use arp_cop and scan_poisoner plugins to learn about the detection of ARP attacks.
 
 > The arp_cop plugin is used to detect and prevent ARP spoofing attacks on a local network. It does this by monitoring ARP traffic on the network and comparing the MAC
