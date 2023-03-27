@@ -214,9 +214,23 @@ I we disable the ssltrip plugin, then the page can load with https in victim mac
 ![image](https://user-images.githubusercontent.com/67383098/227938135-8cd9320d-cfd9-494f-9058-97fab558498d.png)
 
 
+**scan_poisoner**
+
+Scan for hosts  in the network & create a host list.
+
+Then activate `scan_poisoner` plugin
+
+![image](https://user-images.githubusercontent.com/67383098/227951618-61d445d6-ab10-4e90-b46d-6e0eb09bc48d.png)
+
+It shows nothing strange as of now. After we start an attack from the victim machine, it changes.
+
+Add target 1 as gateway ip and target2 as attacker machine ip.
+
+![image](https://user-images.githubusercontent.com/67383098/227956359-0682cbd5-8815-4228-a026-92e70e742abb.png)
 
 
-
+Now in atttacker machine it shows the poisoners
+![image](https://user-images.githubusercontent.com/67383098/227956863-ca1c742d-f083-4bb2-b74d-1511010be3c6.png)
 
 
 
@@ -242,3 +256,12 @@ I we disable the ssltrip plugin, then the page can load with https in victim mac
 
 Observe the ARP cache table, CAM table, etc., before and after the attack for all the above attacks. Run
 Wireshark and observe the traffic patterns before and after the attack
+
+BEFORE - 
+
+![image](https://user-images.githubusercontent.com/67383098/227957565-20e57179-b66d-4e3c-88cb-980ed175d7fa.png)
+
+
+AFTER - 
+
+![image](https://user-images.githubusercontent.com/67383098/227957473-ab391511-0c14-4cc7-b372-c1ee94ff4076.png)
