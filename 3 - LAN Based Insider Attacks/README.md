@@ -1,4 +1,7 @@
+
 # LAN based insider attacks
+
+![image](https://user-images.githubusercontent.com/67383098/227960605-1e41a423-1430-4c47-9d66-b5e6a16f5797.png)
 
 
 Make use of Ettercap/arpspoof tool to perform ARP Cache Poisoning based attacks in a LAN
@@ -202,14 +205,21 @@ I we disable the ssltrip plugin, then the page can load with https in victim mac
 > addresses, and then sending ARP packets to associate the attacker's MAC address with each device's IP address. This allows the attacker to intercept and modify
 > network traffic between each device and the rest of the network.
 
+First in the attacker machine, we activate the **arp_con** plugin which is used to detect  arp-poisoners in the network
+
 ![image](https://user-images.githubusercontent.com/67383098/227937619-4588bec8-54b1-4b57-8a6b-439a59141420.png)
 
+
+In the victim machine & target machine , we add target 1 and target 2.
 
 
 ![image](https://user-images.githubusercontent.com/67383098/227937228-e8a35f79-8c17-4ab9-872f-8e79551f72d9.png)
 
+In the victim machine, start arp poisoning,
+
 ![image](https://user-images.githubusercontent.com/67383098/227938566-5eb335d5-2127-4ffd-8f62-b64c62af5b2d.png)
 
+Coming back to the attacker machine , we see that `arp_cop` has detected malicious arp poisoners.
 
 ![image](https://user-images.githubusercontent.com/67383098/227938135-8cd9320d-cfd9-494f-9058-97fab558498d.png)
 
