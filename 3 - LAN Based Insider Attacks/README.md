@@ -171,6 +171,9 @@ So when victim types `mypage.io` he will be redirected to attacker's fake login 
 ![image](https://user-images.githubusercontent.com/67383098/227926632-b7a9e41a-743e-470b-808f-094e159562ae.png)
 
 
+![image](https://user-images.githubusercontent.com/67383098/227928211-a22eb879-3eaa-4a5d-b7b6-ab27b67c7a7b.png)
+
+![image](https://user-images.githubusercontent.com/67383098/227928268-9ff4a119-40c0-4dcb-a052-843a3def0380.png)
 
 
 
