@@ -1,6 +1,22 @@
 1. Create an IPsec-based VPN with the help of the Strongswan tool. 
+
 a. Configure it with IKE version 1, perform the pen-testing procedures, and make it to 
 IKE version 2 and follow the same. Add your observations to the report. 
+
+![image](https://user-images.githubusercontent.com/67383098/228595143-14e8886f-aea1-405b-b954-e9784a8382ca.png)
+
+```
+┌──(root㉿kali)-[~]
+└─# sysctl -p                 
+net.ipv4.ip_forward = 1
+net.ipv6.conf.all.forwarding = 1
+net.ipv4.conf.all.accept_redirects = 0
+net.ipv4.conf.all.send_redirects = 0
+
+```
+
+
+
 b. Configure your PSK to your own key phrase, then try to crack it offline. Then follow
 the same by creating a random auto-generated PSK and try the same. 
 Reference link: https://www.tecmint.com/setup-ipsec-vpn-with-strongswan-ondebian-ubuntu/
