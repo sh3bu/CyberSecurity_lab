@@ -42,9 +42,7 @@ Here we can see the **SSID** & the type of encryption being used.
 
 --------------------------------------------
 
-## 3. Create an Access point with any Wi-Fi encryption standard and start testing the security of
-that connection using any Wi-Fi security testing tools, which should include (Aircrack-Ng,
-Wifite, not limited). Try to capture the 4-way handshake using these methods.
+## 3. Create an Access point with any Wi-Fi encryption standard and start testing the security ofthat connection using any Wi-Fi security testing tools, which should include (Aircrack-Ng, Wifite, not limited). Try to capture the 4-way handshake using these methods.
 
 Start monitor mode - `airmon-ng start wlan0`
 
@@ -73,8 +71,7 @@ Below is the captured **4 way handshake** during the deauth process
 
 ----------------------------
 
-## 4. After capturing the required files for testing, use dictionary generation and password
-cracking tools to crack the Wi-Fi password.
+## 4. After capturing the required files for testing, use dictionary generation and password cracking tools to crack the Wi-Fi password.
 a. You must use an existing word file to crack the password.
 b. Also you have to create your dictionary file for cracking the passwords.
 c. Keep 3 different types of passwords for your Wi-Fi to test it. Simple, medium, and
@@ -84,7 +81,7 @@ generated from any password generator online.
 
 Password is `c6dp6m2k`
 
-Now first we try to crack a hard password which was set as password for the  Wifi AP named *realme 10 pro 5g*.
+Now first we try to crack a hard password which was set as password for the  Wifi AP named *realme 10 pro 5g* where password is `c6dp6m2k`
 
 Command - `aircrack-ng WPAcrack-03.cap  -w /usr/share/wordlists/rockyou.txt`
 
