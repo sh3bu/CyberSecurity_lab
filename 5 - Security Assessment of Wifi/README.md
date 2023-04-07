@@ -16,6 +16,12 @@ To transmit and receive data wirelessly, Wi-Fi uses a wireless network adapter o
 
 ## 2. Perform Wi-Fi fingerprinting using Wigile, Inssider, and Kismet.
 
+#### Wigle.net
+
+![image](https://user-images.githubusercontent.com/67383098/230648536-6a44927f-60a6-4e94-9089-c879ae82fa29.png)
+
+
+
 #### Kismet -
 
 - Put Your Wireless Card in Monitor Mode by using the command `sudo airmon-ng start wlan0`
