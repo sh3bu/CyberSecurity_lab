@@ -50,13 +50,9 @@ aireplay-ng --deauth 100 -a EA:B0:24:9F:4A:50 wlan0
 
 ![image](https://user-images.githubusercontent.com/67383098/230556612-09f1a09a-3aa7-49f5-ad7f-7ad0435c226a.png)
 
-Password is `c6dp6m2k`
-
-![image](https://user-images.githubusercontent.com/67383098/230557921-fe84d8c4-95d1-48c9-b34d-eb4152d05847.png)
-
-aircrack-ng WPAcrack-03.cap  -w /usr/share/wordlists/rockyou.txt
-
 ![image](https://user-images.githubusercontent.com/67383098/230556884-b437c7ae-6f60-4174-be73-a34409ed85ec.png)
+
+
 
 
 4. After capturing the required files for testing, use dictionary generation and password
@@ -67,6 +63,20 @@ c. Keep 3 different types of passwords for your Wi-Fi to test it. Simple, medium
 complex passwords can be used for testing. Simple can be a dictionary word,
 medium can be of dictionary word with some numbers, and complex can be
 generated from any password generator online.
+
+Password is `c6dp6m2k`
+
+![image](https://user-images.githubusercontent.com/67383098/230557921-fe84d8c4-95d1-48c9-b34d-eb4152d05847.png)
+
+aircrack-ng WPAcrack-03.cap  -w /usr/share/wordlists/rockyou.txt
+
+
+When we use a weak password, we can crack it using aircrack-ng
+
+aircrack-ng testt.cap -w /usr/share/wordlists/rockyou.txt
+
+![image](https://user-images.githubusercontent.com/67383098/230582697-1c10599d-ef77-4013-b14d-f184c284929d.png)
+
 
 
 5. Use Rouge AP (WifiPhisher) to create an Evil twin, perform a basic phishing attack using this
