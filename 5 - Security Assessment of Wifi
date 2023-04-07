@@ -3,6 +3,28 @@
 
 2. Perform Wi-Fi fingerprinting using Wigile, Inssider, and Kismet.
 
+#### Kismet -
+
+Put Your Wireless Card in Monitor Mode
+
+ - `sudo airmon-ng start wlan0`
+
+![image](https://user-images.githubusercontent.com/67383098/230551170-37f0d414-dd18-4c86-b728-5cfbacc2f2d3.png)
+
+Launch Kismet
+
+![image](https://user-images.githubusercontent.com/67383098/230552556-1d7bd6a6-bc11-4152-9989-001327bbfb93.png)
+
+
+kismet -c wlanomon
+
+
+
+![image](https://user-images.githubusercontent.com/67383098/230552480-bdc61d8a-b846-4b13-a472-d352e2c0d806.png)
+
+
+![image](https://user-images.githubusercontent.com/67383098/230552332-32a6be07-3554-4bff-9661-17fe92d3b727.png)
+
 
 3. Create an Access point with any Wi-Fi encryption standard and start testing the security of
 that connection using any Wi-Fi security testing tools, which should include (Aircrack-Ng,
