@@ -3,7 +3,11 @@
 a. Configure it with IKE version 1, perform the pen-testing procedures, and make it to 
 IKE version 2 and follow the same. Add your observations to the report. 
 
-![image](https://user-images.githubusercontent.com/67383098/228595143-14e8886f-aea1-405b-b954-e9784a8382ca.png)
+**Machine 1 - Ubuntu  - 192.168.180.209- devgateway1**
+
+**Machine 2 - Kali    - 192.168.180.228 - devgateway2**
+
+Make the following changes changes to `/etc/sysctl.conf`. Type **sysctl -p** to view the changes made
 
 ```
 ┌──(root㉿kali)-[~]
@@ -15,19 +19,82 @@ net.ipv4.conf.all.send_redirects = 0
 
 ```
 
-![image](https://user-images.githubusercontent.com/67383098/229168161-1c8b1630-90cb-4392-be47-2344cc6a0854.png)
+Make changes to `/etc/ipsec.conf` in both the machines. Change the leftsubnet=<ip-of-machine1>, rightsubnet=,<ip-of-machine2> , keyexchange=ikev1/2
 
-![image](https://user-images.githubusercontent.com/67383098/229168361-d11a10bf-8091-4d80-bb86-da3e674f40d3.png)
+**Machine 1**
+``` 
+config setup
+        charondebug="all"
+        uniqueids=yes
+conn devgateway1
+        type=tunnel
+        auto=start
+        keyexchange=ikev1
+        authby=secret
+        left=192.168.180.209
+        # leftsubnet=192.168.0.101/24
+        right=192.168.180.228
+        # rightsubnet=10.0.2.15/24
+        ike=aes256-sha1-modp1024!
+        esp=aes256-sha1!
+        aggressive=no
+        keyingtries=%forever
+        ikelifetime=28800s
+        lifetime=3600s
+        dpddelay=30s
+        dpdtimeout=120s
+        dpdaction=restart
+```
+**Machine 2**
+``` 
+config setup
+        charondebug="all"
+        uniqueids=yes
+conn devgateway2
+        type=tunnel
+        auto=start
+        keyexchange=ikev1
+        authby=secret
+        left=192.168.180.209
+        # leftsubnet=192.168.0.101/24
+        right=192.168.180.228
+        # rightsubnet=10.0.2.15/24
+        ike=aes256-sha1-modp1024!
+        esp=aes256-sha1!
+        aggressive=no
+        keyingtries=%forever
+        ikelifetime=28800s
+        lifetime=3600s
+        dpddelay=30s
+        dpdtimeout=120s
+        dpdaction=restart
+```
 
-![image](https://user-images.githubusercontent.com/67383098/229168978-e864a4ae-5119-452f-ad19-5d06d006cffd.png)
-![image](https://user-images.githubusercontent.com/67383098/229169056-7bfc95b2-3c16-49c5-b9e9-6b75387fce64.png)
+Make changes to `/etc/ipsec.secrets` config file in both machines.
+
+```
+root@ubuntu:/home/ubuntu# cat /etc/ipsec.secrets
+
+# This file holds shared secrets or RSA private keys for authentication.
+# RSA private key for this host, authenticating it to any other host
+# which knows the public part.
+#------- Site 1 Gateway (tecmint-devgateway) ------- 
 
 
-![image](https://user-images.githubusercontent.com/67383098/229172238-737294cb-a517-4127-be0f-2d5d3da0a629.png)
-![image](https://user-images.githubusercontent.com/67383098/229172303-e9e19ffc-6327-48ac-ab4e-18341c9d9ef6.png)
+192.168.180.209 192.168.180.228 : PSK "1234"
+```
 
-![image](https://user-images.githubusercontent.com/67383098/229173137-c973e4ba-9cf5-423f-bd55-b5f5b0a493b9.png)
-![image](https://user-images.githubusercontent.com/67383098/229173217-a9b50e78-5ac4-44a1-a811-ac00da4c62c0.png)
+![image](https://user-images.githubusercontent.com/67383098/232959470-9ca42f62-42e6-48f3-96aa-665a2ccdf992.png)
+
+Now using `ipsec up <gateway-name>` , we can establish the vpn connection between two machines.
+
+![image](https://user-images.githubusercontent.com/67383098/232960104-ea9eb191-48d5-474d-9aa3-9e34ec05d488.png)
+
+We send a msg from one machine to another and capture the packets in wireshark,
+
+![image](https://user-images.githubusercontent.com/67383098/232960642-2dff575d-6d30-4db6-b41c-0c5312e6531d.png)
+
+![image](https://user-images.githubusercontent.com/67383098/232960848-b7ef0876-bccc-4433-adeb-8e2a58aa0087.png)
 
 
 
