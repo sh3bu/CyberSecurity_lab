@@ -116,6 +116,23 @@ h. Perform necessary IKE scans
 Reference Link : https://doxsec.wordpress.com/2015/08/07/ipsec-vpn-penetrationtesting-with-backtrack-and-kali-linux-tools/
 
 
+#### NMAP
+
+**Detecting whether the port is open/not**
+
+![image](https://user-images.githubusercontent.com/67383098/233851506-3b2d8688-da6b-466a-b834-9f5b188218a1.png)
+
+
+**OS detection**
+
+![image](https://user-images.githubusercontent.com/67383098/233851281-f4621f8b-4e01-4c0b-acbb-735f2a105159.png)
+
+**Vuln scan**
+
+![image](https://user-images.githubusercontent.com/67383098/233851387-c0b14921-d116-4ba8-8fbd-0898b711f9a5.png)
+
+
+
 -----------------------------------------------------------------------
 
 3. Create a professional pen test report for your above findings. You can refer to the sample 
