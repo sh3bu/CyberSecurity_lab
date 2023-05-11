@@ -1,0 +1,43 @@
+1. Understand the architecture of Splunk and the installation process. Setup collector and
+forwarder, then ensure the logs are accumulated in Splunk. Familiarize yourself with the
+dashboard fields.
+
+
+
+
+2. Run Splunk >> Forwarder can be in the same system or another system (user’s convenience)
+>>Make sure the logs are indexing in the Splunk enterprise.
+• Run any network and port scanning commands from the host to the target machine.
+Run at least 5 to 8 commands. (If required, any tools can also be used).
+• Use the search section in Splunk to analyze the firewall logs to find the log of the above
+process and the exact IP from where the scan was performed. HINT: Use the “stats”
+command.
+• Analyze the log file and create an alert for any further similar activities.
+
+
+3. Run Splunk >> Forwarder can be in the same system or another system (user’s convenience)
+>>Make sure the logs are indexing in the Splunk enterprise.
+• Perform any communication using unencrypted traffic.
+• Use the Splunk search section to check the firewall logs to analyze which application
+uses unencrypted data.
+• Analyze the log file and create an alert for any further similar activities.
+
+
+4. Run Splunk >> Forwarder can be in the same system or another system (user’s convenience)
+>>Make sure the logs are indexing in the Splunk enterprise. Download malware from this site
+https://dasmalwerk.eu/ . CAUTION: THEY ARE REAL MALWARE. USE IN AN ISOLATED
+ENVIRONMENT. >> Run the malware in your target system.
+• After running your malware file, either it is stopped by your antivirus or not using the
+search section, find the antivirus log for the past 1 hour.
+• Run different malware files again in the same target system and use the search section
+to find the time range between the previous and current malware file execution. HINT:
+Use the “stats” command.
+• Then save that search as an alert to show a notification when the same type happens
+again.
+
+
+5. Run Splunk >> Forwarder can be in the same system or another system (user’s convenience)
+>>Make sure the logs are indexing in the Splunk enterprise.
+• Logout of the target system and perform multiple failed attempts. Then use the search
+section to filter out the failed attempt logs. Hint: Use the “stats” command.
+• Analyze the log file and create an alert for any further similar acti
