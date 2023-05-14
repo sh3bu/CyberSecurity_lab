@@ -48,12 +48,24 @@ command.
 
 
 3. Run Splunk >> Forwarder can be in the same system or another system (user’s convenience)
+
 >>Make sure the logs are indexing in the Splunk enterprise.
+
 • Perform any communication using unencrypted traffic.
+
 • Use the Splunk search section to check the firewall logs to analyze which application
 uses unencrypted data.
+
 • Analyze the log file and create an alert for any further similar activities.
 
+![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/449c416d-2def-45a6-9a92-ee6a879b0798)
+
+![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/1a59aa5d-f334-4d4a-b61b-4d3de75f47da)
+
+
+![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/8e7576be-2aa8-4a92-8265-68db9147f2f8)
+
+![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/903884b6-0e0a-44ec-9c43-505b367b74ab)
 
 
 
