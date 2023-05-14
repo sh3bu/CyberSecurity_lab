@@ -52,6 +52,8 @@ uses unencrypted data.
 • Analyze the log file and create an alert for any further similar activities.
 
 
+
+
 4. Run Splunk >> Forwarder can be in the same system or another system (user’s convenience)
 >>Make sure the logs are indexing in the Splunk enterprise. Download malware from this site
 https://dasmalwerk.eu/ . CAUTION: THEY ARE REAL MALWARE. USE IN AN ISOLATED
