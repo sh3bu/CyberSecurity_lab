@@ -37,6 +37,12 @@ process and the exact IP from where the scan was performed. HINT: Use the “sta
 command.
 • Analyze the log file and create an alert for any further similar activities.
 
+![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/f9cc87de-f58b-4cb3-9f5b-d035fda84cab)
+
+![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/8bd89654-888b-4c15-b540-1825ed800ed7)
+
+![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/793e81f6-64b3-4feb-b2a2-549c9f71ac61)
+
 
 3. Run Splunk >> Forwarder can be in the same system or another system (user’s convenience)
 >>Make sure the logs are indexing in the Splunk enterprise.
