@@ -70,20 +70,32 @@ uses unencrypted data.
 
 
 4. Run Splunk >> Forwarder can be in the same system or another system (user’s convenience)
+
 >>Make sure the logs are indexing in the Splunk enterprise. Download malware from this site
 https://dasmalwerk.eu/ . CAUTION: THEY ARE REAL MALWARE. USE IN AN ISOLATED
 ENVIRONMENT. >> Run the malware in your target system.
+
 • After running your malware file, either it is stopped by your antivirus or not using the
 search section, find the antivirus log for the past 1 hour.
+
 • Run different malware files again in the same target system and use the search section
 to find the time range between the previous and current malware file execution. HINT:
 Use the “stats” command.
+
 • Then save that search as an alert to show a notification when the same type happens
 again.
 
 
 5. Run Splunk >> Forwarder can be in the same system or another system (user’s convenience)
+
 >>Make sure the logs are indexing in the Splunk enterprise.
+
 • Logout of the target system and perform multiple failed attempts. Then use the search
 section to filter out the failed attempt logs. Hint: Use the “stats” command.
-• Analyze the log file and create an alert for any further similar acti
+
+• Analyze the log file and create an alert for any further similar activities
+
+![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/4f4fc576-3b90-43f5-9b73-c0371816e178)
+
+![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/e4964756-fdbc-44e9-8c30-8f14ba9b2b87)
+
