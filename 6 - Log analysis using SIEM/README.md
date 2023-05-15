@@ -2,16 +2,27 @@
 forwarder, then ensure the logs are accumulated in Splunk. Familiarize yourself with the
 dashboard fields.
 
+**Installation -**
+
 ![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/eb75c78f-6132-4ef2-a12c-ad8dc4dffd57)
 
+**Start splunk instance -**
 
 ![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/95e0c63a-5717-41e5-9711-7b7205c4191e)
 
+**Create credentials to loin t splunk forwarder -**
+
 ![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/cbec10cd-e377-4948-ab3f-a33cda1df4d2)
+
+**Forward all logs to splunk enterprise which is located in our windows machine -**
 
 ![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/27f86ec8-9c3a-467e-afc1-8a61fc1cde0b)
 
+**Use splunk add monitor to add the location of log files to be forwarded -**
+
 ![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/c67ec615-206e-483b-8c50-a7a2633d55b4)
+
+**Start apache server to test and ensure if logs are being forwarded**
 
 ![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/7f0b01b8-2658-422a-9636-76212117e86a)
 
@@ -23,6 +34,8 @@ dashboard fields.
 
 
 ![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/8f3f391e-a19d-4d74-9948-c836fd73d3fb)
+
+Thus from the below screenshot we can confirm that our logs are being forwarded.
 
 ![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/2ea3fddc-a62d-4364-b57e-57fb951f9ec1)
 
@@ -40,9 +53,15 @@ command.
 
 • Analyze the log file and create an alert for any further similar activities.
 
+**Add thr location of folder where nmap log files are stored -**
+
 ![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/f9cc87de-f58b-4cb3-9f5b-d035fda84cab)
 
+**Run nmap command on linux system - **
+
 ![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/8bd89654-888b-4c15-b540-1825ed800ed7)
+
+**Perform search query**
 
 ![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/793e81f6-64b3-4feb-b2a2-549c9f71ac61)
 
