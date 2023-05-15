@@ -70,8 +70,9 @@ command.
 
 ## 3. Run Splunk >> Forwarder can be in the same system or another system (user’s convenience)
 
-```
 >>Make sure the logs are indexing in the Splunk enterprise.
+
+```
 
 • Perform any communication using unencrypted traffic.
 
@@ -94,9 +95,10 @@ uses unencrypted data.
 
 ## 4. Run Splunk >> Forwarder can be in the same system or another system (user’s convenience)
 
+>>Make sure the logs are indexing in the Splunk enterprise. Download malware from this site
+
 
 ```
->>Make sure the logs are indexing in the Splunk enterprise. Download malware from this site
 https://dasmalwerk.eu/ . CAUTION: THEY ARE REAL MALWARE. USE IN AN ISOLATED
 ENVIRONMENT. >> Run the malware in your target system.
 
@@ -113,8 +115,10 @@ again.
 
 ## 5. Run Splunk >> Forwarder can be in the same system or another system (user’s convenience)
 
-```
 >>Make sure the logs are indexing in the Splunk enterprise.
+
+
+```
 
 • Logout of the target system and perform multiple failed attempts. Then use the search
 section to filter out the failed attempt logs. Hint: Use the “stats” command.
