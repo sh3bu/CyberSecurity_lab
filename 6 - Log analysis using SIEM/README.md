@@ -1,6 +1,4 @@
-## 1. Understand the architecture of Splunk and the installation process. Setup collector and
-forwarder, then ensure the logs are accumulated in Splunk. Familiarize yourself with the
-dashboard fields.
+## 1. Understand the architecture of Splunk and the installation process. Setup collector and forwarder, then ensure the logs are accumulated in Splunk. Familiarize yourself with the dashboard fields.
 
 **Installation -**
 
