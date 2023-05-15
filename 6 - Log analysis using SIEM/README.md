@@ -1,4 +1,4 @@
-1. Understand the architecture of Splunk and the installation process. Setup collector and
+## 1. Understand the architecture of Splunk and the installation process. Setup collector and
 forwarder, then ensure the logs are accumulated in Splunk. Familiarize yourself with the
 dashboard fields.
 
@@ -41,9 +41,10 @@ Thus from the below screenshot we can confirm that our logs are being forwarded.
 
 
 
-2. Run Splunk >> Forwarder can be in the same system or another system (user’s convenience)
+## 2. Run Splunk >> Forwarder can be in the same system or another system (user’s convenience)
 >>Make sure the logs are indexing in the Splunk enterprise.
 
+```
 • Run any network and port scanning commands from the host to the target machine.
 Run at least 5 to 8 commands. (If required, any tools can also be used).
 
@@ -52,6 +53,7 @@ process and the exact IP from where the scan was performed. HINT: Use the “sta
 command.
 
 • Analyze the log file and create an alert for any further similar activities.
+```
 
 **Add thr location of folder where nmap log files are stored -**
 
@@ -66,8 +68,9 @@ command.
 ![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/793e81f6-64b3-4feb-b2a2-549c9f71ac61)
 
 
-3. Run Splunk >> Forwarder can be in the same system or another system (user’s convenience)
+## 3. Run Splunk >> Forwarder can be in the same system or another system (user’s convenience)
 
+```
 >>Make sure the logs are indexing in the Splunk enterprise.
 
 • Perform any communication using unencrypted traffic.
@@ -76,6 +79,7 @@ command.
 uses unencrypted data.
 
 • Analyze the log file and create an alert for any further similar activities.
+```
 
 ![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/449c416d-2def-45a6-9a92-ee6a879b0798)
 
@@ -88,8 +92,10 @@ uses unencrypted data.
 
 
 
-4. Run Splunk >> Forwarder can be in the same system or another system (user’s convenience)
+## 4. Run Splunk >> Forwarder can be in the same system or another system (user’s convenience)
 
+
+```
 >>Make sure the logs are indexing in the Splunk enterprise. Download malware from this site
 https://dasmalwerk.eu/ . CAUTION: THEY ARE REAL MALWARE. USE IN AN ISOLATED
 ENVIRONMENT. >> Run the malware in your target system.
@@ -103,16 +109,18 @@ Use the “stats” command.
 
 • Then save that search as an alert to show a notification when the same type happens
 again.
+```
 
+## 5. Run Splunk >> Forwarder can be in the same system or another system (user’s convenience)
 
-5. Run Splunk >> Forwarder can be in the same system or another system (user’s convenience)
-
+```
 >>Make sure the logs are indexing in the Splunk enterprise.
 
 • Logout of the target system and perform multiple failed attempts. Then use the search
 section to filter out the failed attempt logs. Hint: Use the “stats” command.
 
 • Analyze the log file and create an alert for any further similar activities
+```
 
 ![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/4f4fc576-3b90-43f5-9b73-c0371816e178)
 
