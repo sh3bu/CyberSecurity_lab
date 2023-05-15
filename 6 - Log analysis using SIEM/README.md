@@ -79,8 +79,11 @@ uses unencrypted data.
 
 • Analyze the log file and create an alert for any further similar activities.
 ```
+**Visit any unencrypted website to produce traffic -** 
 
 ![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/449c416d-2def-45a6-9a92-ee6a879b0798)
+
+**Search query to identify the website visited =**
 
 ![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/1a59aa5d-f334-4d4a-b61b-4d3de75f47da)
 
@@ -124,7 +127,12 @@ section to filter out the failed attempt logs. Hint: Use the “stats” command
 • Analyze the log file and create an alert for any further similar activities
 ```
 
+**Perform incorrect login attempts to trigger the error log & confirm it is captured in the splunk enterprise - **
+
+
 ![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/4f4fc576-3b90-43f5-9b73-c0371816e178)
+
+**Enter correct credentials while logging in and view that in splunk -**
 
 ![image](https://github.com/sh3bu/CyberSecurity_lab/assets/67383098/e4964756-fdbc-44e9-8c30-8f14ba9b2b87)
 
